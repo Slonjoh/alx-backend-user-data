@@ -26,37 +26,37 @@ pip install -r requirements.txt
 	- Example:
 	```bash
 	curl -X POST http://localhost:5000/users -d 'email=user@example.com' -d 'password=myPassword'
-```
+	```
 2. Log In
 	- Endpoint: `POST /sessions`
 	- Example:
 	```bash
 	curl -X POST http://localhost:5000/sessions -d 'email=user@example.com' -d 'password=myPassword'
-```
+	```
 3. Log Out
 	- Endpoint: `DELETE /sessions`
 	- Example:
 	```bash
 	curl -X DELETE http://localhost:5000/sessions -b 'session_id=<session_id>'
-```
+	```
 4. Get User Profile
 	- Endpoint: `GET /profile`
 	- Example:
 	```bash
 	curl -X GET http://localhost:5000/profile -b 'session_id=<session_id>'
-```
+	```
 5. Request Password Reset
 	- Endpoint: `POST /reset_password`
 	- Example:
 	```bash
 	curl -X POST http://localhost:5000/reset_password -d 'email=user@example.com'
-```
+	```
 6. Update Password After Reset
 	- Endpoint: `PUT /reset_password`
 	- Example:
 	```bash
 	curl -X PUT http://localhost:5000/reset_password -d 'email=user@example.com' -d 'reset_token=<reset_token>' -d 'new_password=myNewPassword'
-```
+	```
 
 ## API Endpoints
 - POST /users
