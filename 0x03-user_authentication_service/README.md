@@ -12,7 +12,7 @@ This project implements a Flask-based authentication service with features for u
    ```bash
    git clone https://github.com/Slonjoh/alx-backend-user-data.git
    cd 0x03-user_authentication_service
-```
+   ```
 
 ## Install dependencies
 pip install -r requirements.txt
